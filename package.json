@@ -2,7 +2,9 @@
   "name": "monorepo-nx",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "changeset": "changeset"
+  },
   "private": true,
   "dependencies": {
     "@nrwl/next": "15.4.5",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
+    "@changesets/cli": "^2.26.0",
     "@nrwl/cypress": "15.4.5",
     "@nrwl/eslint-plugin-nx": "15.4.5",
     "@nrwl/jest": "15.4.5",
