@@ -50,10 +50,18 @@
   "generators": {
     "@nrwl/react": {
       "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "bundler": "webpack",
         "babel": true
       },
       "library": {
+        "style": "styled-components",
+        "linter": "eslint",
         "unitTestRunner": "jest"
+      },
+      "component": {
+        "style": "styled-components"
       }
     },
     "@nrwl/next": {
