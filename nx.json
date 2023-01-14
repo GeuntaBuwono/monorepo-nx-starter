@@ -3,7 +3,7 @@
   "npmScope": "monorepo-nx",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "@vercel/remote-nx",
       "options": {
         "cacheableOperations": [
           "build",
@@ -13,7 +13,7 @@
           "tsc",
           "build-storybook"
         ],
-        "accessToken": ""
+        "cacheDirectory": "/tmp/nx-cache"
       }
     }
   },
