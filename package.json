@@ -6,7 +6,8 @@
     "changeset": "changeset",
     "check:lint": "npx nx run-many --all --target=lint --fix",
     "check:ts": "nx run-many --all --target=tsc",
-    "checker": "nx run-many --all --target=tsc,lint",
+    "check:test": "nx run-many --all --target=test",
+    "checker": "nx run-many --all --target=tsc,lint,test",
     "prepare": "husky install"
   },
   "private": true,
