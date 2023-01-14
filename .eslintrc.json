@@ -1,7 +1,20 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx"],
+  "plugins": [
+    "@nrwl/nx",
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers",
+    "sonarjs",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:prettier/recommended"
+  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -22,6 +35,41 @@
       }
     },
     {
+      "files": ["*.cy.ts", "*.cy.tsx"],
+      "plugins": ["cypress", "chai-friendly"],
+      "extends": [
+        "plugin:@nrwl/nx/typescript",
+        "plugin:cypress/recommended",
+        "plugin:chai-friendly/recommended"
+      ],
+      "rules": {}
+    },
+    {
+      "files": ["*.test.ts", "*.test.tsx"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": {
+        "jest/prefer-strict-equal": "error",
+        "jest/prefer-todo": "error",
+        "jest/unbound-method": "error",
+        "jest/prefer-spy-on": "error",
+        "jest/prefer-expect-resolves": "error",
+        "jest/prefer-comparison-matcher": "error",
+        "jest/max-nested-describe": ["error", { "max": 2 }],
+        "jest/prefer-expect-assertions": "off",
+        "jest/prefer-lowercase-title": [
+          "error",
+          {
+            "ignore": ["describe"]
+          }
+        ],
+        "jest/consistent-test-it": [
+          "error",
+          { "fn": "it", "withinDescribe": "test" }
+        ]
+      }
+    },
+    {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nrwl/nx/typescript"],
       "rules": {}
@@ -31,5 +79,59 @@
       "extends": ["plugin:@nrwl/nx/javascript"],
       "rules": {}
     }
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "enum",
+        "format": ["PascalCase"],
+        "suffix": ["Enum"]
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": true,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "@typescript-eslint/array-type": [
+      "error",
+      {
+        "default": "generic"
+      }
+    ],
+    "no-console": "error",
+    "@typescript-eslint/ban-ts-comment": "error",
+    "@typescript-eslint/consistent-generic-constructors": "error",
+    "@typescript-eslint/consistent-indexed-object-style": "error",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-use-before-define": "error",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": 0,
+    "no-inline-comments": "error",
+    "no-nested-ternary": "error",
+    "no-shadow": "off",
+    "no-unreachable": "error",
+    "no-unused-vars": "off",
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": ["../*"],
+            "message": "Usage of relative parent imports is not allowed."
+          }
+        ]
+      }
+    ]
+  }
 }

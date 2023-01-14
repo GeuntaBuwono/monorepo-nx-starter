@@ -1,0 +1,37 @@
+{
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/button-has-type": "off",
+    "react/display-name": "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "react/jsx-boolean-value": "error",
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".tsx", ".jsx"] }
+    ],
+    "react/jsx-indent": "off",
+    "react/jsx-tag-spacing": [
+      2,
+      {
+        "beforeSelfClosing": "always"
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      2,
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "ignore",
+        "condition": "ignore",
+        "logical": "ignore",
+        "prop": "ignore"
+      }
+    ]
+  }
+}
