@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "changeset": "changeset",
-    "check:lint": "nx run-many --all --target=lint"
+    "check:lint": "nx run-many --all --target=lint",
+    "check:ts": "nx run-many --all --target=tsc"
   },
   "private": true,
   "dependencies": {
