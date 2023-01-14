@@ -35,7 +35,7 @@
     "@nrwl/storybook": "15.5.1",
     "@nrwl/web": "15.5.1",
     "@nrwl/workspace": "15.5.1",
-    "@rollup/plugin-url": "^7.0.0",
+    "@rollup/plugin-url": "^8.0.1",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/builder-webpack5": "^6.5.15",
     "@storybook/core-server": "^6.5.15",
