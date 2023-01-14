@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "check:lint": "nx run-many --all --target=lint"
   },
   "private": true,
   "dependencies": {
