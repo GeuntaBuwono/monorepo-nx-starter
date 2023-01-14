@@ -10,6 +10,7 @@
           "lint",
           "test",
           "e2e",
+          "tsc",
           "build-storybook"
         ],
         "accessToken": ""
