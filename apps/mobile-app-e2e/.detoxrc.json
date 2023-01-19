@@ -1,6 +1,15 @@
 {
-  "testRunner": "jest",
-  "runnerConfig": "jest.config.json",
+  "testRunner": {
+    "$0": "jest",
+    "args": {
+      "config": "jest.config.json"
+    }
+  },
+  "jest": {
+    "setupTimeout": 120000,
+    "reportSpecs": false,
+    "reportWorkerAssign": false
+  },
   "apps": {
     "ios.debug": {
       "type": "ios.app",
@@ -34,7 +43,7 @@
     "emulator": {
       "type": "android.emulator",
       "device": {
-        "avdName": "Pixel_4a_API_30"
+        "avdName": "Nexus_5X_API_31"
       }
     }
   },
