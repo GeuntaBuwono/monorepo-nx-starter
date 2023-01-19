@@ -10271,6 +10271,7 @@ jest-changed-files@^28.1.3:
     execa "^5.0.0"
     p-limit "^3.1.0"
 
+<<<<<<< HEAD
 jest-circus@^28.1.1, jest-circus@^28.1.3:
   version "28.1.3"
   resolved "https://registry.yarnpkg.com/jest-circus/-/jest-circus-28.1.3.tgz#d14bd11cf8ee1a03d69902dc47b6bd4634ee00e4"
@@ -10280,11 +10281,23 @@ jest-circus@^28.1.1, jest-circus@^28.1.3:
     "@jest/expect" "^28.1.3"
     "@jest/test-result" "^28.1.3"
     "@jest/types" "^28.1.3"
+=======
+jest-circus@28.1.1, jest-circus@^28.1.1, jest-circus@^28.1.3:
+  version "28.1.1"
+  resolved "https://registry.yarnpkg.com/jest-circus/-/jest-circus-28.1.1.tgz#3d27da6a974d85a466dc0cdc6ddeb58daaa57bb4"
+  integrity sha512-75+BBVTsL4+p2w198DQpCeyh1RdaS2lhEG87HkaFX/UG0gJExVq2skG2pT7XZEGBubNj2CytcWSPan4QEPNosw==
+  dependencies:
+    "@jest/environment" "^28.1.1"
+    "@jest/expect" "^28.1.1"
+    "@jest/test-result" "^28.1.1"
+    "@jest/types" "^28.1.1"
+>>>>>>> 7ef2e1c (chore: fixed detox android test)
     "@types/node" "*"
     chalk "^4.0.0"
     co "^4.6.0"
     dedent "^0.7.0"
     is-generator-fn "^2.0.0"
+<<<<<<< HEAD
     jest-each "^28.1.3"
     jest-matcher-utils "^28.1.3"
     jest-message-util "^28.1.3"
@@ -10297,6 +10310,20 @@ jest-circus@^28.1.1, jest-circus@^28.1.3:
     stack-utils "^2.0.3"
 
 jest-cli@^28.1.3:
+=======
+    jest-each "^28.1.1"
+    jest-matcher-utils "^28.1.1"
+    jest-message-util "^28.1.1"
+    jest-runtime "^28.1.1"
+    jest-snapshot "^28.1.1"
+    jest-util "^28.1.1"
+    pretty-format "^28.1.1"
+    slash "^3.0.0"
+    stack-utils "^2.0.3"
+    throat "^6.0.1"
+
+jest-cli@^28.1.1:
+>>>>>>> 7ef2e1c (chore: fixed detox android test)
   version "28.1.3"
   resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-28.1.3.tgz#558b33c577d06de55087b8448d373b9f654e46b2"
   integrity sha512-roY3kvrv57Azn1yPgdTebPAXvdR2xfezaKKYzVxZ6It/5NCxzJym6tUI5P1zkdWhfUYkxEI9uZWcQdaFLo8mJQ==
@@ -10387,7 +10414,11 @@ jest-docblock@^28.1.1:
   dependencies:
     detect-newline "^3.0.0"
 
+<<<<<<< HEAD
 jest-each@^28.1.3:
+=======
+jest-each@^28.1.1:
+>>>>>>> 7ef2e1c (chore: fixed detox android test)
   version "28.1.3"
   resolved "https://registry.yarnpkg.com/jest-each/-/jest-each-28.1.3.tgz#bdd1516edbe2b1f3569cfdad9acd543040028f81"
   integrity sha512-arT1z4sg2yABU5uogObVPvSlSMQlDA48owx07BDPAiasW0yYpYHYOo4HHLz9q0BVzDVU4hILFjzJw0So9aCL/g==
