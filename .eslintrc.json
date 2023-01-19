@@ -6,7 +6,8 @@
     "@typescript-eslint",
     "eslint-plugin-import-helpers",
     "sonarjs",
-    "prettier"
+    "prettier",
+    "simple-import-sort"
   ],
   "extends": [
     "eslint:recommended",
@@ -122,6 +123,11 @@
     "no-shadow": "off",
     "no-unreachable": "error",
     "no-unused-vars": "off",
+    "sonarjs/no-duplicate-string": ["error", 5],
+    "semi": "off",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
+    "jsx-quotes": ["error", "prefer-double"],
     "no-restricted-imports": [
       "warn",
       {

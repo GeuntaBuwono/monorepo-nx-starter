@@ -1,4 +1,5 @@
-import type { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { ComponentMeta, ComponentStory } from '@storybook/react';
+
 import { Button } from './button';
 
 const Story: ComponentMeta<typeof Button> = {
