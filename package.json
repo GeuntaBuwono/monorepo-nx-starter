@@ -37,7 +37,7 @@
     "@nrwl/detox": "15.5.2",
     "@nrwl/eslint-plugin-nx": "15.5.1",
     "@nrwl/jest": "15.5.2",
-    "@nrwl/linter": "15.5.1",
+    "@nrwl/linter": "15.5.3",
     "@nrwl/react": "15.5.1",
     "@nrwl/react-native": "15.5.2",
     "@nrwl/storybook": "15.5.1",
