@@ -21,7 +21,9 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {}
+    "paths": {
+      "@monorepo-nx/storybook-host": ["libs/storybook-host/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
