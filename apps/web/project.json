@@ -9,7 +9,7 @@
       "options": {
         "commands": [
           {
-            "command": "tsc --noEmit -p apps/web/tsconfig.json"
+            "command": "tsc --noEmit -p apps/web/tsconfig.json --incremental false"
           }
         ]
       }
