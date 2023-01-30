@@ -112,3 +112,4 @@ apps/mobile-app-e2e/artifacts
 
 # TS build info
 tsconfig.tsbuildinfo
+apps/mobile-app-e2e/artifacts
