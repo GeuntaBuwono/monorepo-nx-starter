@@ -1,7 +1,7 @@
 {
-  "name": "web",
+  "name": "web-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/web",
+  "sourceRoot": "apps/web-app",
   "projectType": "application",
   "targets": {
     "tsc": {
@@ -9,7 +9,7 @@
       "options": {
         "commands": [
           {
-            "command": "tsc --noEmit -p apps/web/tsconfig.json --incremental false"
+            "command": "tsc --noEmit -p apps/web-app/tsconfig.json --incremental false"
           }
         ]
       }
@@ -19,12 +19,12 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/web",
-        "outputPath": "dist/apps/web"
+        "root": "apps/web-app",
+        "outputPath": "dist/apps/web-app"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/web"
+          "outputPath": "apps/web-app"
         },
         "production": {}
       }
@@ -33,16 +33,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "web:build",
+        "buildTarget": "web-app:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "web:build:development",
+          "buildTarget": "web-app:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "web:build:production",
+          "buildTarget": "web-app:build:production",
           "dev": false
         }
       }
@@ -50,14 +50,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "web:build:production"
+        "buildTarget": "web-app:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/web/jest.config.ts",
+        "jestConfig": "apps/web-app/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -65,7 +65,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/web-app/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
