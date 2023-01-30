@@ -21,9 +21,7 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {
-      "@monorepo-nx/ui": ["libs/ui/src/index.ts"]
-    }
+    "paths": {}
   },
   "exclude": ["node_modules", "tmp"]
 }
