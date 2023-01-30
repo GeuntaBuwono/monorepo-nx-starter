@@ -8,11 +8,11 @@
     "npm": "v9"
   },
   "scripts": {
-    "web:dev": "nx run-many --target=serve --projects=web-*",
-    "web:e2e": "nx run-many --target=e2e --projects=web-*",
-    "mobile:dev": "nx run-many --target=serve --projects=mobile-*",
-    "mobile:e2e": "nx run-many --target=e2e --projects=mobile-*",
-    "storybook:dev": "nx run storybook-host:storybook",
+    "web:dev": "doppler run -- nx run-many --target=serve --projects=web-*",
+    "web:e2e": "doppler run -- nx run-many --target=e2e --projects=web-*",
+    "mobile:dev": "doppler run -- nx run-many --target=serve --projects=mobile-*",
+    "mobile:e2e": "doppler run -- nx run-many --target=e2e --projects=mobile-*",
+    "storybook:dev": "doppler run -- nx run storybook-host:storybook",
     "changeset": "changeset",
     "check:lint": "nx run-many --all --target=lint --fix",
     "check:ts": "nx run-many --all --target=tsc",
