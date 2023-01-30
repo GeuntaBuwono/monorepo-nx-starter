@@ -18,12 +18,12 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/web-e2e/cypress.config.ts",
-        "devServerTarget": "web:serve:development",
+        "devServerTarget": "web-app:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "web:serve:production"
+          "devServerTarget": "web-app:serve:production"
         }
       }
     },
@@ -36,5 +36,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["web"]
+  "implicitDependencies": ["web-app"]
 }
