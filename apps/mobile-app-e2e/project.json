@@ -9,7 +9,7 @@
       "options": {
         "commands": [
           {
-            "command": "tsc --noEmit -p apps/mobile-app-e2e/tsconfig.json"
+            "command": "tsc --noEmit -p apps/mobile-app-e2e/tsconfig.json --incremental false"
           }
         ]
       }
