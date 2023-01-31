@@ -25,3 +25,9 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+## Issue
+
+[AppCenter Issue](https://github.com/microsoft/appcenter/issues/278)
+
+- React Native still compatible with app-center, so we should't have it on this monorepo
