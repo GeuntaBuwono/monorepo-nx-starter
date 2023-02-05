@@ -1,7 +1,15 @@
 import './styles.css';
 
+import {
+  ClerkProvider,
+  RedirectToSignIn,
+  SignedIn,
+  SignedOut,
+} from '@clerk/nextjs';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+
+import { ApolloProviderWrapper } from '../ApolloProviderWrapper';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,7 +18,16 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to web-app!</title>
       </Head>
       <main className="app">
-        <Component {...pageProps} />
+        <ClerkProvider {...pageProps}>
+          <ApolloProviderWrapper>
+            <SignedIn>
+              <Component {...pageProps} />
+            </SignedIn>
+            <SignedOut>
+              <RedirectToSignIn />
+            </SignedOut>
+          </ApolloProviderWrapper>
+        </ClerkProvider>
       </main>
     </>
   );

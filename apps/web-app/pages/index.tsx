@@ -1,4 +1,7 @@
+import { useAuth, useClerk } from '@clerk/nextjs';
 import styled from 'styled-components';
+
+import { useAddActivityMutation } from '../gql/generated';
 
 const StyledPage = styled.div`
   .page {
@@ -11,6 +14,13 @@ export function Index() {
    *
    * Note: The corresponding styles are in the ./index.styled-components file.
    */
+
+  const [addActivity] = useAddActivityMutation();
+
+  const { signOut } = useClerk();
+
+  const { userId } = useAuth();
+
   return (
     <StyledPage>
       <div className="wrapper">
@@ -20,6 +30,30 @@ export function Index() {
               <span> Hello there, </span>
               Welcome web-app 👋
             </h1>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                addActivity({
+                  variables: {
+                    name: 'testing',
+                    userId: userId,
+                    description: 'test',
+                    price: 123,
+                  },
+                });
+              }}
+            >
+              Make Add Activity
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                signOut();
+              }}
+            >
+              signOut
+            </button>
           </div>
 
           <div id="hero" className="rounded">
