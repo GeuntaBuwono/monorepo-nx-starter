@@ -1,0 +1,23 @@
+mutation AddActivity(
+  $userId: String!
+  $name: String
+  $price: Int
+  $description: String
+) {
+  insert_wallet_activity_one(
+    object: {
+      user_id: $userId
+      price: $price
+      description: $description
+      name: $name
+    }
+  ) {
+    created_at
+    description
+    id
+    price
+    updated_at
+    user_id
+    name
+  }
+}

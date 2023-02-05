@@ -1,0 +1,11 @@
+query GetActivity {
+  wallet_activity {
+    id
+    name
+    price
+    updated_at
+    user_id
+    description
+    created_at
+  }
+}
