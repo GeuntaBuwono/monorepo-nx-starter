@@ -2196,6 +2196,18 @@
     dotenv "~10.0.0"
     semver "7.3.4"
 
+"@nrwl/cypress@15.7.2":
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.7.2.tgz#a5a2cb6b4e570a2fa0e0c782cabf679a624bd3c8"
+  integrity sha512-zQne9YLp+qXSzaBIHqFpW8WqJ0pRLoU6dpfuHWdDFuGf+er4lh0hfntG81QXDOiUba9Vq+UsFChCYGxVF54HHA==
+  dependencies:
+    "@nrwl/devkit" "15.7.2"
+    "@nrwl/linter" "15.7.2"
+    "@nrwl/workspace" "15.7.2"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    dotenv "~10.0.0"
+    semver "7.3.4"
+
 "@nrwl/devkit@15.6.3":
   version "15.6.3"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.6.3.tgz#e4e96c53ba3304786a49034286c8511534b2b194"
