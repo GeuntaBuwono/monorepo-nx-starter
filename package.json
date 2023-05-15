@@ -39,7 +39,7 @@
     "@changesets/cli": "^2.26.0",
     "@nrwl/cypress": "15.6.3",
     "@nrwl/eslint-plugin-nx": "15.6.3",
-    "@nrwl/jest": "15.6.3",
+    "@nrwl/jest": "16.1.4",
     "@nrwl/linter": "15.6.3",
     "@nrwl/react": "15.7.2",
     "@nrwl/storybook": "15.6.3",
