@@ -42,7 +42,7 @@
     "@nrwl/jest": "15.6.3",
     "@nrwl/linter": "15.6.3",
     "@nrwl/react": "15.7.2",
-    "@nrwl/storybook": "15.6.3",
+    "@nrwl/storybook": "16.2.1",
     "@nrwl/web": "15.6.3",
     "@nrwl/workspace": "15.6.3",
     "@rollup/plugin-url": "^8.0.1",
