@@ -43,7 +43,7 @@
     "@nrwl/linter": "15.6.3",
     "@nrwl/react": "15.7.2",
     "@nrwl/storybook": "15.6.3",
-    "@nrwl/web": "15.6.3",
+    "@nrwl/web": "16.2.2",
     "@nrwl/workspace": "15.6.3",
     "@rollup/plugin-url": "^8.0.1",
     "@storybook/addon-essentials": "^6.5.16",
