@@ -3,7 +3,6 @@
   "npmScope": "monorepo-nx",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@vercel/remote-nx",
       "options": {
         "cacheableOperations": [
           "build",
@@ -32,7 +31,12 @@
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
     },
     "build-storybook": {
-      "inputs": ["default", "^production", "{workspaceRoot}/.storybook/**/*"]
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/.storybook/**/*",
+        "!{projectRoot}/.storybook/**/*"
+      ]
     }
   },
   "namedInputs": {
@@ -49,7 +53,7 @@
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
   "generators": {
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "babel": true
       },
@@ -57,7 +61,7 @@
         "unitTestRunner": "jest"
       }
     },
-    "@nrwl/next": {
+    "@nx/next": {
       "application": {
         "style": "styled-components",
         "linter": "eslint"
