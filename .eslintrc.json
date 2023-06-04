@@ -2,7 +2,7 @@
   "root": true,
   "ignorePatterns": ["**/*"],
   "plugins": [
-    "@nrwl/nx",
+    "@nx",
     "@typescript-eslint",
     "eslint-plugin-import-helpers",
     "sonarjs",
@@ -13,13 +13,14 @@
     "prettier",
     "plugin:@typescript-eslint/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
   ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@nrwl/nx/enforce-module-boundaries": [
+        "@nx/enforce-module-boundaries": [
           "error",
           {
             "enforceBuildableLibDependency": true,
@@ -38,7 +39,7 @@
       "files": ["*.cy.ts", "*.cy.tsx"],
       "plugins": ["cypress", "chai-friendly"],
       "extends": [
-        "plugin:@nrwl/nx/typescript",
+        "plugin:@nx/typescript",
         "plugin:cypress/recommended",
         "plugin:chai-friendly/recommended"
       ],
@@ -55,7 +56,12 @@
         "jest/prefer-spy-on": "error",
         "jest/prefer-expect-resolves": "error",
         "jest/prefer-comparison-matcher": "error",
-        "jest/max-nested-describe": ["error", { "max": 2 }],
+        "jest/max-nested-describe": [
+          "error",
+          {
+            "max": 2
+          }
+        ],
         "jest/prefer-expect-assertions": "off",
         "jest/prefer-lowercase-title": [
           "error",
@@ -65,18 +71,21 @@
         ],
         "jest/consistent-test-it": [
           "error",
-          { "fn": "it", "withinDescribe": "test" }
+          {
+            "fn": "it",
+            "withinDescribe": "test"
+          }
         ]
       }
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript"],
+      "extends": ["plugin:@nx/typescript"],
       "rules": {}
     },
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
+      "extends": ["plugin:@nx/javascript"],
       "rules": {}
     }
   ],
