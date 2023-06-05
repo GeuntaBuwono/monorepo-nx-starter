@@ -1,0 +1,40 @@
+name: PR Checker
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  prepare:
+    name: Prepare
+    runs-on: self-hosted
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 18
+  commitlint:
+    name: Check Commitlint
+    runs-on: self-hosted
+    needs: prepare
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 18
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: yarn add @commitlint/cli
+      - run: yarn check:commitlint --from=HEAD~${{ github.event.pull_request.commits }} --to=HEAD --verbose
+  checker:
+    name: Checker
+    runs-on: self-hosted
+    needs: prepare
+    steps:
+      - uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 18
+      - run: yarn check:test
