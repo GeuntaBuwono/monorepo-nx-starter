@@ -7,14 +7,14 @@ on:
 jobs:
   prepare:
     name: Prepare
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: DerYeger/yarn-setup-action@master
         with:
           node-version: 18
   commitlint:
     name: Check Commitlint
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: prepare
     steps:
       - uses: DerYeger/yarn-setup-action@master
@@ -31,7 +31,7 @@ jobs:
       - run: yarn check:commitlint --from=HEAD~${{ github.event.pull_request.commits }} --to=HEAD --verbose
   checker:
     name: Checker
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: prepare
     steps:
       - uses: DerYeger/yarn-setup-action@master
