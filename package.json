@@ -10,8 +10,6 @@
   "scripts": {
     "web:dev": "doppler run -- nx run-many --target=serve --projects=web-*",
     "web:e2e": "doppler run -- nx run-many --target=e2e --projects=web-*",
-    "mobile:dev": "doppler run -- nx run-many --target=serve --projects=mobile-*",
-    "mobile:e2e": "doppler run -- nx run-many --target=e2e --projects=mobile-*",
     "storybook:dev": "doppler run -- nx run storybook-host:storybook",
     "changeset": "changeset",
     "check:lint": "nx run-many --all --target=lint --fix",
