@@ -49,7 +49,7 @@
     "@rollup/plugin-url": "^8.0.1",
     "@storybook/addon-essentials": "7.0.18",
     "@storybook/core-server": "7.0.18",
-    "@storybook/nextjs": "7.0.18",
+    "@storybook/nextjs": "7.3.2",
     "@storybook/react": "7.0.18",
     "@svgr/rollup": "8.0.1",
     "@svgr/webpack": "8.0.1",
