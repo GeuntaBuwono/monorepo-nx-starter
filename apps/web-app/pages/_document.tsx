@@ -13,20 +13,33 @@ export default class CustomDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
+    const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
-    const sheet = new ServerStyleSheet();
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            // TODO fix type later
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            sheet.collectStyles(<App {...props} />),
+        });
 
-    ctx.renderPage = () =>
-      originalRenderPage({
-        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
-        enhanceComponent: (Component) => Component,
-      });
-
-    const intialProps = await Document.getInitialProps(ctx);
-    const styles = sheet.getStyleElement();
-
-    return { ...intialProps, styles };
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {
