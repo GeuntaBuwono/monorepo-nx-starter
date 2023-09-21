@@ -3,6 +3,7 @@
   "npmScope": "monorepo-nx",
   "tasksRunnerOptions": {
     "default": {
+      "runner": "nx-cloud",
       "options": {
         "cacheableOperations": [
           "build",
