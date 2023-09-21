@@ -5,51 +5,17 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  prettier:
-    name: Check Prettier
+  checker:
+    name: Checker
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Nodejs and npm
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
         with:
-          node-version: '18'
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
+      - run: npm ci
 
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install --frozen-lockfile
-
-      - run: yarn install
-      - run: yarn check:prettier
-  check-type:
-    name: Check Type
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup Nodejs and npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install --frozen-lockfile
-
-      - run: yarn install
-      - run: yarn check:ts
-  check-linter:
-    name: Check Linter
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup Nodejs and npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install --frozen-lockfile
-
-      - run: yarn install
-      - run: yarn check:lint
+      - run: npx nx checker
+      - run: npx nx affected -t lint --parallel=3
+      - run: npx nx affected -t tsc --parallel=3
+      - run: npx nx affected -t test --parallel=3
