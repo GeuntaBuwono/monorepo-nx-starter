@@ -7,7 +7,7 @@ on:
 jobs:
   prettier:
     name: Check Prettier
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Nodejs and npm
         uses: actions/setup-node@v3
@@ -23,7 +23,7 @@ jobs:
       - run: yarn check:prettier
   check-type:
     name: Check Type
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Nodejs and npm
         uses: actions/setup-node@v3
@@ -39,7 +39,7 @@ jobs:
       - run: yarn check:ts
   check-linter:
     name: Check Linter
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Nodejs and npm
         uses: actions/setup-node@v3
