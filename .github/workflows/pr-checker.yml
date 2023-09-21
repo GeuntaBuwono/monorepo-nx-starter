@@ -49,6 +49,9 @@ jobs:
       - name: Initialize the Nx Cloud distributed CI run
         run: npx nx-cloud start-ci-run
 
+      - name: Tracking the origin branch
+        run: "git branch --track main origin/main"
+
       - name: Run commands in parallel
         run: |
           pids=()
