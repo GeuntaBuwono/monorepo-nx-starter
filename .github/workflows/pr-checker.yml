@@ -44,7 +44,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Initialize the Nx Cloud distributed CI run
         run: npx nx-cloud start-ci-run
@@ -106,7 +106,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Start Nx Agent ${{ matrix.agent }}
         run: npx nx-cloud start-agent
