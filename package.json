@@ -2,12 +2,14 @@
   "name": "monorepo-nx",
   "version": "0.0.0",
   "license": "MIT",
+  "engineStrict": true,
   "engines": {
     "node": "v18",
-    "yarn": "v1",
-    "npm": "v9"
+    "yarn": "only-pnpm",
+    "npm": "only-pnpm"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "web:dev": "doppler run -- nx run-many --target=serve --projects=web-*",
     "web:e2e": "doppler run -- nx run-many --target=e2e --projects=web-*",
     "storybook:dev": "doppler run -- nx run storybook-host:storybook",
