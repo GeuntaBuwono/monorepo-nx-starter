@@ -1,4 +1,4 @@
-name: PR Checker
+name: DEBUG WORKFLOW
 
 on:
   pull_request:
@@ -11,8 +11,8 @@ env:
   NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
 
 jobs:
-  checker:
-    name: Checker
+  DEBUG_WORKFLOW:
+    name: DEBUG WORKFLOW
     runs-on: ubuntu-latest
     steps:
       - name: Echo Env
