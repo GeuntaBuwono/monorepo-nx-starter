@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo Env
-        run: echo $NX_CLOUD_ACCESS_TOKEN
+        run: echo ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
