@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-
-import Index from '../pages/index';
+// eslint-disable-next-line no-restricted-imports
+import Index from '../pages';
 
 describe('Index', () => {
   it('should render successfully', () => {
