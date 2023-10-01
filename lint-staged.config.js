@@ -1,3 +1,3 @@
 module.exports = {
-  '*': (files) => ['nx affected:lint --fix --files', 'nx format:write --files'],
+  '*': (files) => ['nx affected:lint --fix', 'nx format:write'],
 };

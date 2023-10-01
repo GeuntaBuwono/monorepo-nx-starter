@@ -67,8 +67,10 @@ jobs:
         run: |
           pids=()
           # list of commands to be run on main has env flag NX_CLOUD_DISTRIBUTED_EXECUTION set to false
+          NX_CLOUD_DISTRIBUTED_EXECUTION=false pnpm exec nx-cloud record -- pnpm exec nx format:check & pids+=($!)
+
           # list of commands to be run on agents
-          pnpm exec nx-cloud record -- pnpm exec nx affected -t lint --parallel=3 &
+          pnpm exec nx affected -t lint --parallel=3 &
           pids+=($!)
 
           pnpm exec nx affected -t test --parallel=3 --ci --code-coverage &
@@ -129,6 +131,6 @@ jobs:
         run: pnpm install
 
       - name: Start Nx Agent ${{ matrix.agent }}
-        run: npx nx-cloud start-agent
+        run: pnpm exect nx-cloud start-agent
         env:
           NX_AGENT_NAME: ${{ matrix.agent }}
