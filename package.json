@@ -51,7 +51,7 @@
     "@nx/workspace": "16.9.1",
     "@rollup/plugin-url": "^8.0.1",
     "@storybook/addon-essentials": "7.4.3",
-    "@storybook/core-server": "7.4.3",
+    "@storybook/core-server": "7.4.5",
     "@storybook/nextjs": "7.4.3",
     "@storybook/react": "7.4.3",
     "@svgr/rollup": "8.1.0",
