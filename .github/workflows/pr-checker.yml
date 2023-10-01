@@ -1,4 +1,4 @@
-name: PR Checker
+name: PR Checker PNPM
 
 on:
   pull_request:
