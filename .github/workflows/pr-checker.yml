@@ -35,18 +35,21 @@ jobs:
   prettier:
     name: Check Lint
     runs-on: ubuntu-latest
+    needs: cache-and-install
     steps:
       - name: Start Checking
         run: pnpm check:lint
   check-type:
     name: Check Type
     runs-on: ubuntu-latest
+    needs: cache-and-install
     steps:
       - name: Start Checking
         run: pnpm check:ts
   check-test:
     name: Check Test
     runs-on: ubuntu-latest
+    needs: cache-and-install
     steps:
       - name: Start Checking
         run: pnpm check:test
