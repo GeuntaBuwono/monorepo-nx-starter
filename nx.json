@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "monorepo-nx",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx-cloud",
@@ -12,8 +11,7 @@
           "e2e",
           "tsc",
           "build-storybook"
-        ],
-        "cacheDirectory": "/tmp/nx-cache"
+        ]
       }
     }
   },

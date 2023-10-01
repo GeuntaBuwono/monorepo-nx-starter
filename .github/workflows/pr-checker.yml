@@ -58,7 +58,7 @@ jobs:
         run: pnpm install
 
       - name: Initialize the Nx Cloud distributed CI run
-        run: npx nx-cloud start-ci-run
+        run: pnpm exec nx-cloud start-ci-run
 
       - name: Tracking the origin branch
         run: 'git branch --track main origin/main'
@@ -67,16 +67,16 @@ jobs:
         run: |
           pids=()
           # list of commands to be run on main has env flag NX_CLOUD_DISTRIBUTED_EXECUTION set to false
-          NX_CLOUD_DISTRIBUTED_EXECUTION=false npx nx-cloud record -- npx nx format:check & pids+=($!)
+          NX_CLOUD_DISTRIBUTED_EXECUTION=false pnpm exec nx-cloud record -- pnpm exec nx format:check & pids+=($!)
 
           # list of commands to be run on agents
-          npx nx affected -t lint --parallel=3 &
+          pnpm exec nx affected -t lint --parallel=3 &
           pids+=($!)
 
-          npx nx affected -t test --parallel=3 --ci --code-coverage &
+          pnpm exec nx affected -t test --parallel=3 --ci --code-coverage &
           pids+=($!)
 
-          npx nx affected -t tsc --parallel=3 &
+          pnpm exec nx affected -t tsc --parallel=3 &
           pids+=($!)
 
           # run all commands in parallel and bail if one of them fails
@@ -91,7 +91,7 @@ jobs:
       - name: Stop all running agents for this CI run
         # It's important that we always run this step, otherwise in the case of any failures in preceding non-Nx steps, the agents will keep running and waste billable minutes
         if: ${{ always() }}
-        run: npx nx-cloud stop-all-agents
+        run: pnpm exec nx-cloud stop-all-agents
 
   agents:
     name: Agent ${{ matrix.agent }}
@@ -131,6 +131,6 @@ jobs:
         run: pnpm install
 
       - name: Start Nx Agent ${{ matrix.agent }}
-        run: npx nx-cloud start-agent
+        run: pnpm exec nx-cloud start-agent
         env:
           NX_AGENT_NAME: ${{ matrix.agent }}
