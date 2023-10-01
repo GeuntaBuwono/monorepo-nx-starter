@@ -5,7 +5,7 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  cache-and-install:
+  cache-and-install-and-checker:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
