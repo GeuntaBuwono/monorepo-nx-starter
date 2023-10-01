@@ -14,7 +14,6 @@ jobs:
   DEBUG_WORKFLOW:
     name: DEBUG WORKFLOW
     runs-on: ubuntu-latest
-    if: ${{ false }}
     steps:
       - name: Echo Env
         run: echo ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}

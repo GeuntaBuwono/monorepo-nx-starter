@@ -1,3 +1,9 @@
 module.exports = {
-  '*': (files) => ['nx affected:lint --fix', 'nx format:write'],
+  '*': (filesArray) => {
+    const files = filesArray.join();
+    return [
+      `nx affected:lint --fix --files=${files}`,
+      `nx format:write --files=${files}`,
+    ];
+  },
 };
