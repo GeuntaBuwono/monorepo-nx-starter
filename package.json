@@ -33,7 +33,7 @@
     "tslib": "^2.6.2"
   },
   "devDependencies": {
-    "@babel/core": "7.22.20",
+    "@babel/core": "7.23.0",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "7.23.0",
     "@changesets/cli": "^2.26.2",
