@@ -5,6 +5,10 @@ import { Button } from './button';
 const Story: Meta<typeof Button> = {
   component: Button,
   title: 'Button',
+  tags: ['autodocs'],
+  args: {
+    label: 'Welcome to Button!',
+  },
 };
 export default Story;
 
