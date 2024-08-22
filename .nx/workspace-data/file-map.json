@@ -1,0 +1,420 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.2",
+  "deps": {
+    "core-js": "3.36.1",
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-is": "18.3.1",
+    "regenerator-runtime": "0.14.0",
+    "styled-components": "5.3.11",
+    "tslib": "^2.6.2",
+    "@storybook/addon-interactions": "^8.2.8",
+    "@babel/core": "7.23.0",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "7.23.0",
+    "@changesets/cli": "^2.26.2",
+    "@nx/cypress": "19.6.2",
+    "@nx/eslint": "19.6.2",
+    "@nx/eslint-plugin": "19.6.2",
+    "@nx/jest": "19.6.2",
+    "@nx/js": "19.6.2",
+    "@nx/next": "19.6.2",
+    "@nx/react": "19.6.2",
+    "@nx/rollup": "19.6.2",
+    "@nx/storybook": "19.6.2",
+    "@nx/web": "19.6.2",
+    "@nx/webpack": "19.6.2",
+    "@nx/workspace": "19.6.2",
+    "@rollup/plugin-url": "8.0.2",
+    "@storybook/addon-essentials": "8.2.9",
+    "@storybook/core-server": "8.2.9",
+    "@storybook/nextjs": "7.4.5",
+    "@storybook/react": "8.2.9",
+    "@svgr/rollup": "8.1.0",
+    "@svgr/webpack": "8.1.0",
+    "@testing-library/react": "15.0.6",
+    "@types/jest": "29.5.12",
+    "@types/node": "18.19.9",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "@types/react-is": "18.3.0",
+    "@types/styled-components": "5.1.27",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "babel-jest": "29.7.0",
+    "babel-loader": "9.1.3",
+    "babel-plugin-styled-components": "2.1.4",
+    "cypress": "13.13.3",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "2.15.1",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-jest": "^27.4.0",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.21.0",
+    "eslint-plugin-storybook": "^0.6.14",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "lint-staged": "^14.0.1",
+    "nx": "19.6.2",
+    "nx-cloud": "19.0.0",
+    "prettier": "^2.8.8",
+    "storybook": "8.2.9",
+    "ts-jest": "29.1.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.5.4",
+    "url-loader": "^4.1.1"
+  },
+  "pathMappings": {
+    "@monorepo-nx/storybook-host": [
+      "libs/storybook-host/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "web-app-e2e": [
+        {
+          "file": "apps/web-app-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/web-app-e2e/cypress.config.ts",
+          "hash": "13356768158862517355",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/web-app-e2e/project.json",
+          "hash": "6940903524765920415"
+        },
+        {
+          "file": "apps/web-app-e2e/src/e2e/app.cy.ts",
+          "hash": "8854445726087019372"
+        },
+        {
+          "file": "apps/web-app-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/web-app-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/web-app-e2e/src/support/commands.ts",
+          "hash": "15440342343773689871"
+        },
+        {
+          "file": "apps/web-app-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/web-app-e2e/tsconfig.json",
+          "hash": "1788248097864730386"
+        }
+      ],
+      "storybook-host": [
+        {
+          "file": "libs/storybook-host/.babelrc",
+          "hash": "3160176922210355093"
+        },
+        {
+          "file": "libs/storybook-host/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/storybook-host/.storybook/main.js",
+          "hash": "12480987354857012212"
+        },
+        {
+          "file": "libs/storybook-host/.storybook/preview.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/storybook-host/README.md",
+          "hash": "9038723306009083502"
+        },
+        {
+          "file": "libs/storybook-host/jest.config.ts",
+          "hash": "15064711936910564993"
+        },
+        {
+          "file": "libs/storybook-host/package.json",
+          "hash": "16259327471797012740"
+        },
+        {
+          "file": "libs/storybook-host/project.json",
+          "hash": "1744054629742240035"
+        },
+        {
+          "file": "libs/storybook-host/src/index.ts",
+          "hash": "14428353282588746736"
+        },
+        {
+          "file": "libs/storybook-host/src/lib/button.spec.tsx",
+          "hash": "3113427159981638380",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/storybook-host/src/lib/button.stories.tsx",
+          "hash": "7293302461941579771"
+        },
+        {
+          "file": "libs/storybook-host/src/lib/button.tsx",
+          "hash": "15515237369746657061",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/storybook-host/src/lib/index.ts",
+          "hash": "4878098704980760223"
+        },
+        {
+          "file": "libs/storybook-host/tsconfig.json",
+          "hash": "12629615759319729721"
+        },
+        {
+          "file": "libs/storybook-host/tsconfig.lib.json",
+          "hash": "6035326726746362946"
+        },
+        {
+          "file": "libs/storybook-host/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "libs/storybook-host/tsconfig.storybook.json",
+          "hash": "3839789395737934672"
+        }
+      ],
+      "web-app": [
+        {
+          "file": "apps/web-app/.eslintrc.json",
+          "hash": "5411056282918599099"
+        },
+        {
+          "file": "apps/web-app/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/web-app/jest.config.ts",
+          "hash": "12217160084651269550"
+        },
+        {
+          "file": "apps/web-app/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/web-app/next.config.js",
+          "hash": "10376397822410818939",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/web-app/pages/_app.tsx",
+          "hash": "5445242979929696407",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web-app/pages/_document.tsx",
+          "hash": "13107092335715540854",
+          "deps": [
+            "npm:next",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/web-app/pages/index.tsx",
+          "hash": "5910955650039383117",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/web-app/pages/styles.css",
+          "hash": "10943017421299445298"
+        },
+        {
+          "file": "apps/web-app/project.json",
+          "hash": "501342575402972278"
+        },
+        {
+          "file": "apps/web-app/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web-app/specs/index.spec.tsx",
+          "hash": "1985398654961797594",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web-app/tsconfig.json",
+          "hash": "10622235928137887514"
+        },
+        {
+          "file": "apps/web-app/tsconfig.spec.json",
+          "hash": "6922413205408300107"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".changeset/README.md",
+        "hash": "4888845876018830777"
+      },
+      {
+        "file": ".changeset/config.json",
+        "hash": "2367369710197482262"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".env.example",
+        "hash": "11957601739017577377"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc-react.json",
+        "hash": "11890021958139637886"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "11672934471206209639"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "9019962976580216369"
+      },
+      {
+        "file": ".github/workflows/dependabot-auto-merge-patch.yml",
+        "hash": "7140190819161941226"
+      },
+      {
+        "file": ".github/workflows/pr-checker-nx-cloud.yml",
+        "hash": "8461113469534904762"
+      },
+      {
+        "file": ".github/workflows/pr-checker.yml",
+        "hash": "8285906172406202344"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11229723799756098383"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "16202439976391176716"
+      },
+      {
+        "file": ".ncurc.json",
+        "hash": "1369494275814505722"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "13063318585255476573"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "9175937087874081623"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".storybook/main.js",
+        "hash": "8752685060346206458"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "9442636306979469745"
+      },
+      {
+        "file": "README.md",
+        "hash": "13403503001016338607"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "5546405625092116747"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "500157811767850892"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "lint-staged.config.js",
+        "hash": "17338829972082068227"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "3718875169485148620"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14062273553258464402"
+      },
+      {
+        "file": "package.json",
+        "hash": "17512140698857083488"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "2228424475384036364"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "17264904155617240849"
+      },
+      {
+        "file": "storybook-migration-summary.md",
+        "hash": "13877379809438154916"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "13191126255032352530"
+      }
+    ]
+  }
+}
