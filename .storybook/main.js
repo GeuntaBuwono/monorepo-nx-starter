@@ -1,6 +1,7 @@
 module.exports = {
   stories: [],
-  addons: [],
+  addons: ['@chromatic-com/storybook'],
+
   // uncomment the property below if you want to apply some webpack config globally
   webpackFinal: async (config, { configType }) => {
     // Make whatever fine-grained changes you need that should apply to all storybook configs
@@ -8,11 +9,17 @@ module.exports = {
     // Return the altered config
     return config;
   },
+
   framework: {
     name: '@storybook/nextjs',
     options: {},
   },
+
   docs: {
     autodocs: true,
   },
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript'
+  }
 };
