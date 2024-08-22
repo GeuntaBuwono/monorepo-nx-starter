@@ -1,0 +1,22 @@
+[NX Daemon Server] - 2024-08-22T23:23:41.472Z - Started listening on: /var/folders/07/wr2x8y851gnbvcfqlq6d4sb00000gn/T/1efd29de65cdacad168d/d.sock
+[NX Daemon Server] - 2024-08-22T23:23:41.474Z - [WATCHER]: Subscribed to changes within: /Users/geuntabuwono/Documents/GitHub/monorepo-nx (native)
+[NX Daemon Server] - 2024-08-22T23:23:41.480Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-22T23:23:41.481Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-22T23:23:41.482Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-22T23:23:41.483Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-08-22T23:23:41.483Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-08-22T23:23:41.483Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-22T23:23:41.485Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-22T23:23:41.485Z - [WATCHER]: Stopping the watcher for /Users/geuntabuwono/Documents/GitHub/monorepo-nx (sources)
+[NX Daemon Server] - 2024-08-22T23:23:41.485Z - [WATCHER]: Stopping the watcher for /Users/geuntabuwono/Documents/GitHub/monorepo-nx (outputs)
+[NX Daemon Server] - 2024-08-22T23:25:20.141Z - Started listening on: /var/folders/07/wr2x8y851gnbvcfqlq6d4sb00000gn/T/1efd29de65cdacad168d/d.sock
+[NX Daemon Server] - 2024-08-22T23:25:20.142Z - [WATCHER]: Subscribed to changes within: /Users/geuntabuwono/Documents/GitHub/monorepo-nx (native)
+[NX Daemon Server] - 2024-08-22T23:25:20.144Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-22T23:25:20.144Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-22T23:25:20.145Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-22T23:25:20.146Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-08-22T23:25:20.147Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-08-22T23:25:20.147Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-08-22T23:25:20.147Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-22T23:25:20.147Z - [WATCHER]: Stopping the watcher for /Users/geuntabuwono/Documents/GitHub/monorepo-nx (sources)
+[NX Daemon Server] - 2024-08-22T23:25:20.147Z - [WATCHER]: Stopping the watcher for /Users/geuntabuwono/Documents/GitHub/monorepo-nx (outputs)
