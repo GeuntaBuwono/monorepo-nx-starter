@@ -38,6 +38,7 @@
     "@babel/preset-typescript": "7.23.0",
     "@changesets/cli": "^2.26.2",
     "@nx/cypress": "18.3.5",
+    "@nx/eslint": "18.3.5",
     "@nx/eslint-plugin": "18.3.5",
     "@nx/jest": "18.3.5",
     "@nx/js": "18.3.5",
@@ -67,7 +68,7 @@
     "babel-jest": "29.7.0",
     "babel-loader": "9.1.3",
     "babel-plugin-styled-components": "2.1.4",
-    "cypress": "^13.0.0",
+    "cypress": "^13.6.6",
     "eslint": "8.57.0",
     "eslint-config-next": "13.5.2",
     "eslint-config-prettier": "9.1.0",
@@ -95,8 +96,7 @@
     "ts-jest": "29.1.1",
     "ts-node": "10.9.1",
     "typescript": "5.4.5",
-    "url-loader": "^4.1.1",
-    "@nx/eslint": "18.3.5"
+    "url-loader": "^4.1.1"
   },
   "resolutions": {
     "glob-parent": "6.0.2",
