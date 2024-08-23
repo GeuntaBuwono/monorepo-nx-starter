@@ -17,13 +17,15 @@ updates:
     schedule:
       interval: 'weekly'
     ignore:
+      - dependency-name: '@nx/eslint-plugin'
+      - dependency-name: '@nx/linter'
       - dependency-name: '@typescript-eslint/eslint-plugin'
       - dependency-name: '@typescript-eslint/parser'
       - dependency-name: 'cypress'
       - dependency-name: 'eslint-config-prettier'
       - dependency-name: 'eslint-plugin-prettier'
-      - dependency-name: 'next'
       - dependency-name: 'eslint'
+      - dependency-name: 'next'
       - dependency-name: 'prettier'
       - dependency-name: 'storybook'
       - dependency-name: 'styled-components'
