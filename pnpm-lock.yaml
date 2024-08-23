@@ -244,9 +244,6 @@ packages:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
 
-  '@adobe/css-tools@4.3.1':
-    resolution: {integrity: sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==}
-
   '@adobe/css-tools@4.4.0':
     resolution: {integrity: sha512-Ff9+ksdQQB3rMncgqDK78uLznstjyfIf2Arnh22pW8kBpLs6rpKDwgnZT46hin5Hl1WzazzK64DOrhSwYpS7bQ==}
 
@@ -9215,8 +9212,6 @@ packages:
 snapshots:
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
-
-  '@adobe/css-tools@4.3.1': {}
 
   '@adobe/css-tools@4.4.0': {}
 
@@ -20195,7 +20190,7 @@ snapshots:
 
   stylus@0.59.0:
     dependencies:
-      '@adobe/css-tools': 4.3.1
+      '@adobe/css-tools': 4.4.0
       debug: 4.3.4(supports-color@5.5.0)
       glob: 7.2.3
       sax: 1.2.4
