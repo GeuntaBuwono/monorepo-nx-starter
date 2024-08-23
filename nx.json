@@ -33,12 +33,9 @@
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
       "cache": true
     },
-    "@nx/jest:jest": {
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
+    "@nx/vite:test": {
       "cache": true,
-      "options": {
-        "passWithNoTests": true
-      },
+      "inputs": ["default", "^production"],
       "configurations": {
         "ci": {
           "ci": true,
@@ -53,7 +50,6 @@
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/.eslintrc.json",
       "!{projectRoot}/.storybook/**/*",
       "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
@@ -68,7 +64,7 @@
         "babel": true
       },
       "library": {
-        "unitTestRunner": "jest"
+        "unitTestRunner": "vite"
       }
     },
     "@nx/next": {

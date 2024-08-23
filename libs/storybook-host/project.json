@@ -30,10 +30,14 @@
       }
     },
     "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "executor": "@nx/vite:test",
       "options": {
-        "jestConfig": "libs/storybook-host/jest.config.ts"
+        "config": "libs/storybook-host/vite.config.mts"
+      },
+      "configurations": {
+        "watch": {
+          "watch": true
+        }
       }
     },
     "storybook": {
