@@ -19,7 +19,8 @@
     "check:ts": "nx run-many --all --target=tsc",
     "check:test": "nx run-many --all --target=test",
     "checker": "nx run-many --all --target=tsc,lint,test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy:vercel": "vercel --prod"
   },
   "private": true,
   "dependencies": {
