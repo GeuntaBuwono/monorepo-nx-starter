@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 /* eslint-disable-next-line */
-export interface ButtonProps {}
+export interface ButtonProps {
+  onClick: () => void;
+  label: string;
+}
 
-const StyledButton = styled.div`
+const StyledButton = styled.button`
   color: pink;
 `;
 
-export function Button(props: ButtonProps) {
+export function Button(props: Readonly<ButtonProps>) {
   return (
-    <StyledButton>
-      <h1>Welcome to Button!</h1>
+    <StyledButton onClick={props.onClick}>
+      <h1>{props.label}</h1>
     </StyledButton>
   );
 }
