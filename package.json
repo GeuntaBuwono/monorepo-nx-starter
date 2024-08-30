@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.25.2",
-    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "7.23.0",
     "@changesets/cli": "^2.26.2",
     "@chromatic-com/storybook": "^1",
