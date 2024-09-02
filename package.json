@@ -96,7 +96,7 @@
     "nx-cloud": "19.0.0",
     "prettier": "^2.8.8",
     "storybook": "^8.2.9",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "typescript": "5.5.4",
     "url-loader": "^4.1.1",
     "vite": "^5.0.0",
