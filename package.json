@@ -49,7 +49,7 @@
     "@nx/rollup": "19.6.2",
     "@nx/storybook": "19.6.2",
     "@nx/vite": "19.6.2",
-    "@nx/web": "19.6.2",
+    "@nx/web": "19.6.4",
     "@nx/webpack": "19.6.2",
     "@nx/workspace": "19.6.2",
     "@rollup/plugin-url": "8.0.2",
