@@ -43,7 +43,7 @@
     "@nx/cypress": "19.6.2",
     "@nx/eslint": "19.6.2",
     "@nx/eslint-plugin": "19.6.2",
-    "@nx/js": "19.6.2",
+    "@nx/js": "19.6.4",
     "@nx/next": "19.6.2",
     "@nx/react": "19.6.2",
     "@nx/rollup": "19.6.2",
