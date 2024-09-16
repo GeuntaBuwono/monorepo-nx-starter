@@ -45,7 +45,7 @@
     "@nx/eslint-plugin": "19.7.2",
     "@nx/js": "19.7.2",
     "@nx/next": "19.7.2",
-    "@nx/react": "19.7.2",
+    "@nx/react": "19.7.3",
     "@nx/rollup": "19.7.2",
     "@nx/storybook": "19.7.2",
     "@nx/vite": "19.7.2",
