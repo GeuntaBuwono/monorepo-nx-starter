@@ -1,6 +1,10 @@
 module.exports = {
   stories: [],
-  addons: ['@chromatic-com/storybook', '@storybook/addon-essentials'],
+  addons: [
+    '@chromatic-com/storybook',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+  ],
 
   // uncomment the property below if you want to apply some webpack config globally
   webpackFinal: async (config, { configType }) => {
@@ -17,7 +21,7 @@ module.exports = {
 
   docs: {
     defaultName: 'Documentation',
-    autodocs: true
+    autodocs: true,
   },
 
   typescript: {
