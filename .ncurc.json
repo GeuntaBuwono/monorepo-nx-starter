@@ -8,7 +8,6 @@
     "eslint",
     "next",
     "prettier",
-    "storybook",
     "styled-components"
   ]
 }
