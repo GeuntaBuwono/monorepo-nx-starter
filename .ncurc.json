@@ -1,13 +1,3 @@
 {
-  "reject": [
-    "@typescript-eslint/eslint-plugin",
-    "@typescript-eslint/parser",
-    "cypress",
-    "eslint-config-prettier",
-    "eslint-plugin-prettier",
-    "eslint",
-    "next",
-    "prettier",
-    "styled-components"
-  ]
+  "reject": ["eslint"]
 }
