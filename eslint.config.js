@@ -7,6 +7,7 @@ const eslintPluginPrettier = require('eslint-plugin-prettier');
 const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginSimpleImportSort = require('eslint-plugin-simple-import-sort');
+const eslintEmotion = require('@emotion/eslint-plugin');
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
@@ -33,6 +34,7 @@ module.exports = [
       'jsx-a11y': eslintPluginJsxA11y,
       'react-hooks': eslintPluginReactHooks,
       'simple-import-sort': eslintPluginSimpleImportSort,
+      '@emotion': eslintEmotion,
     },
   },
   {
@@ -80,6 +82,10 @@ module.exports = [
       'no-shadow': 'off',
       'no-unreachable': 'error',
       'no-unused-vars': 'off',
+      '@emotion/jsx-import': 'error',
+      '@emotion/no-vanilla': 'error',
+      '@emotion/import-from-emotion': 'error',
+      '@emotion/styled-import': 'error',
       'no-restricted-imports': [
         'warn',
         {
