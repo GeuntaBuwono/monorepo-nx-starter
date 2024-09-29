@@ -10,7 +10,7 @@ describe('Button', () => {
           throw new Error('Function not implemented.');
         }}
         label={''}
-      />
+      />,
     );
     expect(baseElement).toBeTruthy();
   });
