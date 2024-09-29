@@ -30,7 +30,11 @@
       "cache": true
     },
     "@nx/eslint:lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/eslint.config.js"
+      ],
       "cache": true
     },
     "@nx/vite:test": {
@@ -54,7 +58,8 @@
       "!{projectRoot}/.storybook/**/*",
       "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
       "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/tsconfig.storybook.json"
+      "!{projectRoot}/tsconfig.storybook.json",
+      "!{projectRoot}/eslint.config.js"
     ],
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },

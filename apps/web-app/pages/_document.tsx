@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -20,7 +19,6 @@ export default class CustomDocument extends Document {
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props) =>
-            // eslint-disable-next-line react/jsx-props-no-spreading
             sheet.collectStyles(<App {...props} />),
         });
 

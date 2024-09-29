@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/web-app",
   "projectType": "application",
+  "tags": [],
   "targets": {
     "tsc": {
       "executor": "nx:run-commands",
@@ -67,6 +68,5 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
     }
-  },
-  "tags": []
+  }
 }
