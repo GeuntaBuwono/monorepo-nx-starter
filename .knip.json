@@ -21,14 +21,14 @@
     "@nx/web",
     "@nx/webpack",
     "@nx/workspace",
-    "@rollup/plugin-url",
     "@storybook/core-server",
-    "@svgr/rollup",
     "@svgr/webpack",
     "@testing-library/jest-dom",
     "@vitest/coverage-v8",
+    "@vitest/eslint-plugin",
     "babel-loader",
-    "eslint-config-next",
-    "jsdom"
+    "jsdom",
+    "eslint-plugin-chai-friendly",
+    "eslint-plugin-cypress"
   ]
 }

@@ -10,10 +10,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to web-app!</title>
       </Head>
       <main className="app">
-        <Component
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          {...pageProps}
-        />
+        <Component {...pageProps} />
       </main>
     </>
   );
