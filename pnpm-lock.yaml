@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  glob-parent: 6.0.2
-  trim-newlines: 3.0.1
-
 importers:
   .:
     dependencies:
@@ -8264,6 +8260,13 @@ packages:
       {
         integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==,
       }
+
+  glob-parent@5.1.2:
+    resolution:
+      {
+        integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==,
+      }
+    engines: { node: '>= 6' }
 
   glob-parent@6.0.2:
     resolution:
@@ -17460,6 +17463,21 @@ snapshots:
       - typescript
       - verdaccio
 
+  '@nrwl/js@19.8.2(@babel/traverse@7.25.4)(@swc/core@1.3.86(@swc/helpers@0.5.5))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))(typescript@5.4.5)':
+    dependencies:
+      '@nx/js': 19.8.2(@babel/traverse@7.25.4)(@swc/core@1.3.86(@swc/helpers@0.5.5))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))(typescript@5.4.5)
+    transitivePeerDependencies:
+      - '@babel/traverse'
+      - '@swc-node/register'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - debug
+      - nx
+      - supports-color
+      - typescript
+      - verdaccio
+
   '@nrwl/js@19.8.2(@babel/traverse@7.25.4)(@swc/core@1.3.86(@swc/helpers@0.5.5))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))(typescript@5.6.2)':
     dependencies:
       '@nx/js': 19.8.2(@babel/traverse@7.25.4)(@swc/core@1.3.86(@swc/helpers@0.5.5))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))(typescript@5.6.2)
@@ -17753,7 +17771,7 @@ snapshots:
       '@babel/preset-env': 7.25.4(@babel/core@7.25.2)
       '@babel/preset-typescript': 7.24.7(@babel/core@7.25.2)
       '@babel/runtime': 7.25.4
-      '@nrwl/js': 19.8.2(@babel/traverse@7.25.4)(@swc/core@1.3.86(@swc/helpers@0.5.5))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))(typescript@5.6.2)
+      '@nrwl/js': 19.8.2(@babel/traverse@7.25.4)(@swc/core@1.3.86(@swc/helpers@0.5.5))(@types/node@22.7.4)(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))(typescript@5.4.5)
       '@nx/devkit': 19.8.2(nx@19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5)))
       '@nx/workspace': 19.8.2(@swc/core@1.3.86(@swc/helpers@0.5.5))
       babel-plugin-const-enum: 1.2.0(@babel/core@7.25.2)
@@ -20134,7 +20152,7 @@ snapshots:
     dependencies:
       anymatch: 3.1.3
       braces: 3.0.2
-      glob-parent: 6.0.2
+      glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
       normalize-path: 3.0.0
@@ -21524,7 +21542,7 @@ snapshots:
     dependencies:
       '@nodelib/fs.stat': 2.0.5
       '@nodelib/fs.walk': 1.2.8
-      glob-parent: 6.0.2
+      glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.8
 
@@ -21532,7 +21550,7 @@ snapshots:
     dependencies:
       '@nodelib/fs.stat': 2.0.5
       '@nodelib/fs.walk': 1.2.8
-      glob-parent: 6.0.2
+      glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.8
 
@@ -21820,6 +21838,10 @@ snapshots:
       assert-plus: 1.0.0
 
   github-slugger@2.0.0: {}
+
+  glob-parent@5.1.2:
+    dependencies:
+      is-glob: 4.0.3
 
   glob-parent@6.0.2:
     dependencies:

@@ -15,6 +15,9 @@ const compat = new FlatCompat({
 });
 
 module.exports = [
+  {
+    ignores: ['**/*/.next/*'],
+  },
   js.configs.recommended,
   ...compat.extends(
     'prettier',
