@@ -28,7 +28,6 @@
     "@vitest/eslint-plugin",
     "babel-loader",
     "jsdom",
-    "eslint-plugin-chai-friendly",
-    "eslint-plugin-cypress"
+    "eslint-plugin-chai-friendly"
   ]
 }
