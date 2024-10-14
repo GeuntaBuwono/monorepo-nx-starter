@@ -22,6 +22,8 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
+      "@monorepo-nx/shared": ["shared/src/index.ts"],
+      "@monorepo-nx/shared/*": ["shared/src/*"],
       "@monorepo-nx/storybook-host": ["libs/storybook-host/src/index.ts"]
     }
   },

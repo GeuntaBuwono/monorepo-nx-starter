@@ -1,14 +1,21 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "neverConnectToCloud": true,
-  "tasksRunnerOptions": { "default": { "options": {} } },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {}
+    }
+  },
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"],
       "cache": true
     },
-    "e2e": { "inputs": ["default", "^production"], "cache": true },
+    "e2e": {
+      "inputs": ["default", "^production"],
+      "cache": true
+    },
     "build-storybook": {
       "inputs": [
         "default",
@@ -19,7 +26,9 @@
       ],
       "cache": true
     },
-    "tsc": { "cache": true },
+    "tsc": {
+      "cache": true
+    },
     "@nx/eslint:lint": {
       "inputs": [
         "default",
@@ -31,7 +40,30 @@
     "@nx/vite:test": {
       "cache": true,
       "inputs": ["default", "^production"],
-      "configurations": { "ci": { "ci": true, "codeCoverage": true } }
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "@nx/next:build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "@nx/jest:jest": {
+      "cache": true,
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
+      "options": {
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
     }
   },
   "namedInputs": {
@@ -45,14 +77,26 @@
       "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
       "!{projectRoot}/src/test-setup.[jt]s",
       "!{projectRoot}/tsconfig.storybook.json",
-      "!{projectRoot}/eslint.config.js"
+      "!{projectRoot}/eslint.config.js",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/test-setup.[jt]s"
     ],
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
   "generators": {
     "@nx/react": {
-      "application": { "babel": true },
-      "library": { "unitTestRunner": "vite" }
+      "application": {
+        "babel": true
+      },
+      "library": {
+        "unitTestRunner": "vite"
+      }
+    },
+    "@nx/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
     }
   },
   "useInferencePlugins": false,
