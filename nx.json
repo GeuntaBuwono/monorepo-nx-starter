@@ -1,21 +1,14 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "neverConnectToCloud": true,
-  "tasksRunnerOptions": {
-    "default": {
-      "options": {}
-    }
-  },
+  "tasksRunnerOptions": { "default": { "options": {} } },
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"],
       "cache": true
     },
-    "e2e": {
-      "inputs": ["default", "^production"],
-      "cache": true
-    },
+    "e2e": { "inputs": ["default", "^production"], "cache": true },
     "build-storybook": {
       "inputs": [
         "default",
@@ -26,9 +19,7 @@
       ],
       "cache": true
     },
-    "tsc": {
-      "cache": true
-    },
+    "tsc": { "cache": true },
     "@nx/eslint:lint": {
       "inputs": [
         "default",
@@ -40,12 +31,7 @@
     "@nx/vite:test": {
       "cache": true,
       "inputs": ["default", "^production"],
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
-      }
+      "configurations": { "ci": { "ci": true, "codeCoverage": true } }
     }
   },
   "namedInputs": {
@@ -65,19 +51,13 @@
   },
   "generators": {
     "@nx/react": {
-      "application": {
-        "babel": true
-      },
-      "library": {
-        "unitTestRunner": "vite"
-      }
+      "application": { "babel": true },
+      "library": { "unitTestRunner": "vite" }
     },
     "@nx/next": {
-      "application": {
-        "style": "styled-components",
-        "linter": "eslint"
-      }
+      "application": { "style": "styled-components", "linter": "eslint" }
     }
   },
-  "useInferencePlugins": false
+  "useInferencePlugins": false,
+  "nxCloudId": "670c72b40d4e9e20df080319"
 }
