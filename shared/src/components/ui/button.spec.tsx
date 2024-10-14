@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import Button from './button';
+import { Button } from './button';
 
 describe('Button', () => {
   it('should render successfully', () => {
@@ -9,8 +9,9 @@ describe('Button', () => {
         onClick={function (): void {
           throw new Error('Function not implemented.');
         }}
-        label={''}
-      />,
+      >
+        this is button
+      </Button>,
     );
     expect(baseElement).toBeTruthy();
   });

@@ -1,13 +1,13 @@
 import type { Meta, StoryFn } from '@storybook/react';
 
-import Button from './button';
+import { Button } from './button';
 
 const Story: Meta<typeof Button> = {
   component: Button,
   title: 'Button',
   tags: ['autodocs'],
   args: {
-    label: 'Welcome to Button!',
+    children: 'Welcome to Button!',
   },
 };
 export default Story;
