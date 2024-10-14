@@ -91,5 +91,10 @@
     "vite": "^5.4.8",
     "vite-tsconfig-paths": "^5.0.1",
     "vitest": "^2.1.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "semver@<5.7.2": ">=5.7.2"
+    }
   }
 }
