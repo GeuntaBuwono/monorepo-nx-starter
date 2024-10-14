@@ -8,6 +8,7 @@ const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginSimpleImportSort = require('eslint-plugin-simple-import-sort');
 const eslintEmotion = require('@emotion/eslint-plugin');
+const eslintCypress = require('eslint-plugin-cypress');
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
@@ -27,6 +28,7 @@ module.exports = [
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:cypress/recommended',
   ),
   {
     plugins: {
@@ -38,6 +40,7 @@ module.exports = [
       'react-hooks': eslintPluginReactHooks,
       'simple-import-sort': eslintPluginSimpleImportSort,
       '@emotion': eslintEmotion,
+      cypress: eslintCypress,
     },
   },
   {
