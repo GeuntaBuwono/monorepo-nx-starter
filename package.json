@@ -69,7 +69,7 @@
     "@svgr/webpack": "8.1.0",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.3.12",
-    "@swc/core": "~1.5.7",
+    "@swc/core": "~1.7.35",
     "@swc/helpers": "~0.5.11",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "16.0.1",
