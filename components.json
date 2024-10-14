@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tailwind": {
+    "config": "apps/web-app/tailwind.config.js",
+    "css": "apps/web-app/app/global.css",
+    "baseColor": "stone",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@monorepo-nx/shared/components",
+    "utils": "@monorepo-nx/shared/lib/utils"
+  }
+}
