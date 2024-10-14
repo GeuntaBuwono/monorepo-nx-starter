@@ -53,6 +53,7 @@ module.exports = [
   },
   {
     rules: {
+      'react/prop-types': 0,
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
       '@typescript-eslint/no-unused-vars': 'error',
